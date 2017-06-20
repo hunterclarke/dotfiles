@@ -1,0 +1,74 @@
+" Setup pathogen for plugin management
+call pathogen#infect()
+
+" Allow for loading of project specific vimrc
+set exrc
+set secure
+
+" set colorscheme via base16
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+
+" Automatic reloading of .vimrc
+augroup reload_vimrc
+  autocmd!
+  autocmd bufwritepost $MYVIMRC nested source $MYVIMRC
+augroup END
+
+" Automatic reloading of all files
+set autoread
+
+let mapleader=","
+
+" Removes highlight of your last search
+noremap <C-c> :nohl<CR>
+
+" Buffer navigation
+map <Leader>e :bn<cr>
+map <Leader>E :bp<cr>
+map <Leader>x :bd<cr>
+map <Leader>T :CommandTBuffer<cr>
+set hidden
+
+" Syntax highlighting
+filetype off
+filetype plugin indent on
+syntax on
+
+" Turn off bell
+set vb t_vb=
+
+" Make search case insensitive
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Disable backup files
+set nobackup
+set nowritebackup
+set noswapfile
+
+" Line numbers
+set number
+set relativenumber
+
+" Fix backspace issues
+set backspace=indent,eol,start
+
+" Auto wrap git commits
+au FileType gitcommit set tw=72
+
+" easy pane switching
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" jsx settings
+let g:jsx_ext_required = 0
+
+" ignore tmp files
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components,*/node_modules,*_build
