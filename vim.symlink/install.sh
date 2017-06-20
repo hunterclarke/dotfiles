@@ -12,8 +12,7 @@ git submodule update
 
 # compile command-t
 cd ~/.vim/bundle/command-t/ruby/command-t
-ruby extconf.rb
-make
+rake make
 cd $ZSH
 
 mkdir -p ~/.vim/ftdetect/
