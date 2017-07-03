@@ -31,3 +31,6 @@
 [submodule "vim.symlink/bundle/vim-react-snippets"]
 	path = vim.symlink/bundle/vim-react-snippets
 	url = git@github.com:justinj/vim-react-snippets.git
+[submodule "vim.symlink/bundle/vim-mustache-handlebars"]
+	path = vim.symlink/bundle/vim-mustache-handlebars
+	url = git://github.com/mustache/vim-mustache-handlebars.git
