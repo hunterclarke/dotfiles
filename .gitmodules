@@ -34,3 +34,6 @@
 [submodule "vim.symlink/bundle/vim-polyglot"]
 	path = vim.symlink/bundle/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule "vim.symlink/bundle/pytest.vim"]
+	path = vim.symlink/bundle/pytest.vim
+	url = https://github.com/alfredodeza/pytest.vim.git
