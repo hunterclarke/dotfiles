@@ -6,6 +6,10 @@ set -e
 
 cd "$(dirname $0)"/..
 
+# Update Homebrew
+echo "› brew update"
+brew update
+
 # Run Homebrew through the Brewfile
 echo "› brew bundle"
 brew bundle
