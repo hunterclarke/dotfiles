@@ -25,6 +25,9 @@ let mapleader=","
 " Removes highlight of your last search
 noremap <C-c> :nohl<CR>
 
+" Removes all trailing whitespace
+autocmd BufWritePre * %s/\s\+$//e
+
 " Buffer navigation
 map <Leader>e :bn<cr>
 map <Leader>E :bp<cr>
@@ -72,3 +75,8 @@ let g:jsx_ext_required = 0
 
 " ignore tmp files
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components,*/node_modules,*_build
+
+" Pytest
+nmap <silent><Leader>f <Esc>:Pytest file<CR>
+nmap <silent><Leader>c <Esc>:Pytest class<CR>
+nmap <silent><Leader>m <Esc>:Pytest method<CR>
