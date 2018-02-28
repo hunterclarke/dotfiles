@@ -25,6 +25,7 @@ brew 'unrar'
 brew 'vim', args: ['with-override-system-vi', 'with-python3']
 brew 'wget'
 brew 'yarn'
+brew 'zlib'
 
 cask 'atom'
 cask 'beardedspice'

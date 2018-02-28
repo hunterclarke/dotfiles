@@ -80,3 +80,4 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components,*/node_modules,*_bui
 nmap <silent><Leader>f <Esc>:Pytest file<CR>
 nmap <silent><Leader>c <Esc>:Pytest class<CR>
 nmap <silent><Leader>m <Esc>:Pytest method<CR>
+nmap <silent><Leader>s <Esc>:Pytest session<CR>
