@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-# 
+#
 # installs all of vim's dependencies
 
 # install pathogen
@@ -16,5 +16,4 @@ rake make
 cd $ZSH
 
 mkdir -p ~/.vim/ftdetect/
-ln -s ~/.vim/ultisnips_rep/ftdetect/* ~/.vim/ftdetect/
-
+ln -s -f ~/.vim/ultisnips_rep/ftdetect/* ~/.vim/ftdetect/
