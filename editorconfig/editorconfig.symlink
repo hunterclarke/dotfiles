@@ -14,6 +14,9 @@ indent_size = 2
 [*.hbs]
 indent_size = 2
 
+[*.html.erb]
+indent_size = 2
+
 [*.css]
 indent_size = 2
 
@@ -58,6 +61,9 @@ indent_size = 4
 
 [*.rs]
 indent_size = 4
+
+[*.tf]
+indent_size = 2
 
 [*.md]
 max_line_length = 80
