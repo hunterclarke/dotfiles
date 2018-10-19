@@ -20,6 +20,7 @@ brew 'rbenv'
 brew 'ruby-build'
 brew 'ruby'
 brew 'readline'
+brew 'tmux'
 brew 'unrar'
 brew 'vim', args: ['with-override-system-vi', 'with-python3']
 brew 'wget'
