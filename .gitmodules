@@ -49,3 +49,6 @@
 [submodule "vim.symlink/bundle/vim-go"]
 	path = vim.symlink/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "vim.symlink/bundle/vim-tmux-navigator"]
+	path = vim.symlink/bundle/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
