@@ -1,3 +1,5 @@
+set-option -g default-shell /usr/local/bin/zsh
+
 # colors
 set -g default-terminal "screen-256color"
 set -g status-bg black
