@@ -18,6 +18,9 @@ bind r source-file ~/.tmux.conf
 unbind ^A
 bind ^A select-pane -t :.+
 
+# set the key mode to vi
+set-window-option mode-keys vi
+
 # Smart pane switching with awareness of Vim splits.
 # See: https://github.com/christoomey/vim-tmux-navigator
 is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
