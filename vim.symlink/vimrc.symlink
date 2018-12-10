@@ -78,7 +78,7 @@ nnoremap <C-H> <C-W><C-H>
 let g:jsx_ext_required = 0
 
 " ignore tmp files
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components,*/node_modules,*_build,*.pyc
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components,*/node_modules,*_build,*.pyc,*.mypy_cache*
 
 " Pytest
 nmap <silent><Leader>f <Esc>:Pytest file<CR>
