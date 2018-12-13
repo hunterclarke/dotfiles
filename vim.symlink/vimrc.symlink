@@ -89,3 +89,6 @@ nmap <silent><Leader>s <Esc>:Pytest session<CR>
 " Command-T Settings
 map <Leader>T :CommandTBuffer<cr>
 let g:CommandTTraverseSCM = 'pwd'
+
+" GO
+let g:go_fmt_command = "goimports"
