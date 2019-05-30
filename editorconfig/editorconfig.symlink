@@ -68,6 +68,9 @@ indent_size = 4
 [*.tf]
 indent_size = 2
 
+[*.tfvars]
+indent_size = 2
+
 [*.toml]
 indent_size = 2
 
