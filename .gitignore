@@ -1,3 +1,5 @@
 git/gitconfig.local.symlink
 vim.symlink/autoload
 .netrwhist
+plugged/
+.DS_Store
