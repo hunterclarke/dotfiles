@@ -17,6 +17,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'Alok/notational-fzf-vim'
 
 " Initialize plugin system
 call plug#end()
@@ -100,8 +101,17 @@ let g:jsx_ext_required = 0
 " ignore tmp files
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components,*/node_modules,*_build,*.pyc,*.mypy_cache*,*/vendor
 
-" FZF Settings
+" FZF settings
 map <Leader>t :Files<cr>
+map <Leader>T :Buffers<cr>
 
-" GO
+" Go
 let g:go_fmt_command = "goimports"
+
+" Notational velocity settings
+let g:nv_search_paths = ['~/Dropbox/Notes']
+let g:nv_default_extension = '.txt'
+map <Leader>n :NV<cr>
+
+" Ripgrep
+map <Leader>r :Rg<cr>
