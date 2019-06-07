@@ -103,7 +103,8 @@ let g:jsx_ext_required = 0
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components,*/node_modules,*_build,*.pyc,*.mypy_cache*,*/vendor
 
 " FZF settings
-map <Leader>t :Files<cr>
+let $FZF_DEFAULT_COMMAND="fd --type f"
+map <Leader>t :FZF<cr>
 map <Leader>T :Buffers<cr>
 
 " Go
