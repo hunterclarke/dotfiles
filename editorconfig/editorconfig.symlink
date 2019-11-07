@@ -89,3 +89,6 @@ indent_size = 2
 
 [*.tmpl]
 indent_size = 2
+
+[*.hcl]
+indent_size = 2
