@@ -13,7 +13,6 @@ Plug 'chriskempson/base16-vim', {'do': 'git remote add dict_fix https://github.c
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'sheerun/vim-polyglot'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Initialize plugin system
