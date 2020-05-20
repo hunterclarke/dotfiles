@@ -10,6 +10,8 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 Plug 'editorconfig/editorconfig-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Initialize plugin system
 call plug#end()
@@ -27,3 +29,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 highlight VertSplit cterm=none gui=none
 highlight StatusLineNC cterm=none gui=none
 highlight StatusLine cterm=none gui=none
+
+" Line numbers
+set relativenumber
