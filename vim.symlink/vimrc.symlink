@@ -41,5 +41,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/dist/*,*/node_modules/*
 " Hotkey for fzf
 nnoremap <C-p> :GFiles<CR>
 
-" Set ejs files to html highlighting
+" Set template files to html highlighting
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.hbs set filetype=html
