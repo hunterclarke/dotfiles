@@ -10,8 +10,9 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 Plug 'editorconfig/editorconfig-vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -36,3 +37,6 @@ set relativenumber
 " Ignored files
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/dist/*,*/node_modules/*
 
+" Hotkey for fzf
+nnoremap <C-p> :GFiles<CR>
+let g:fzf_preview_window = 'right:60%'
