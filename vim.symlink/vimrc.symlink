@@ -39,4 +39,3 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/dist/*,*/node_modules/*
 
 " Hotkey for fzf
 nnoremap <C-p> :GFiles<CR>
-let g:fzf_preview_window = 'right:60%'
