@@ -9,10 +9,11 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Plugins
-Plug 'editorconfig/editorconfig-vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'mileszs/ack.vim'
 
 " Initialize plugin system
 call plug#end()
