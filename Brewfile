@@ -13,7 +13,7 @@ brew 'postgresql'
 brew 'python3'
 brew 'redis'
 brew 'tmux'
-brew 'vim', args: ['with-override-system-vi', 'with-python3']
+brew 'vim'
 brew 'wget'
 brew 'yarn'
 brew 'zlib'
